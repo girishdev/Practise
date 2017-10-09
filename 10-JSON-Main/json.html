@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</head>	
+<body>
+	
+	<div id="demo"></div>
+	<div id="demo2"></div>
+	<script type="text/javascript">
+		/*
+			//This is from w3 first samples:-
+		var text = '{"firstname" : "Girish", "lastname" : "Kumar"}';
+		var obj = JSON.parse(text);
+		
+		document.getElementById("demo").innerHTML = obj.firstname + "<br />" + obj.lastname;/**/
+		
+		/*
+			//How to create a JavaScript object array:-
+		var employees = [
+			{"firstName":"Girish", "lastName":"kumar"}, 
+			{"firstName":"Raj", "lastName":"kumar"}, 
+			{"firstName":"Peter","lastName":"Jones"}
+		]
+		
+		//IF we want to overright:-
+			employees[0].firstName = "Giri";
+		
+		document.getElementById("demo").innerHTML = employees[0].firstName + " " + employees[0].lastName;
+		document.getElementById("demo2").innerHTML = employees[1].firstName + " " + employees[1].lastName;/**/
+
+		/*var text = '{"employees" : ['
+						+ '{"firstName" : "Girish", "lastName" : "kumar"},' +'
+						'{"firstName" : "Raju", "lastName" : "kumar"}'					
+					]}';/**/
+
+		/*var text = '{ "employees" : [' + 
+						'{ "firstName":"Girish" , "lastName":"kumar" },' + 
+						'{ "firstName":"Anna" , "lastName":"Smith" },' + 
+						'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+		var obj = JSON.parse(text);
+
+		document.getElementById('demo').innerHTML = obj.employees[0].firstName + " " +obj.employees[0].lastName;/**/
+
+		/*
+			//This is from video:-
+		var newObj = {
+			"someVar" : "This is strign",
+			"anotherCar" : 300
+		}
+		console.log('Testing: ', newObj.anotherCar);/**/
+		
+		/*$.getJSON('external.json', function(data){
+			console.log(data.lastName);
+		})/**/
+	</script>
+	
+	<?php
+		
+		/*$arr = array('a' => 1, 'b' => 2, 'c' => 3, 'd' => 4, 'e' => 5);
+		echo json_encode($arr);/**/
+		
+		class Emp {
+			public $name = "";
+			public $hobbies  = "";
+			public $birthdate = "";
+		}
+
+		$e = new Emp();
+		$e->name = "sachin";
+		$e->hobbies  = "sports";
+		$e->birthdate = date('m/d/Y h:i:s a', "8/5/1974 12:20:03 p");
+		$e->birthdate = date('m/d/Y h:i:s a', strtotime("8/5/1974 12:20:03"));
+
+		echo json_encode($e);/**/
+		
+		echo '<br />';
+		$json = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+
+		var_dump(json_decode($json));
+		var_dump(json_decode($json, true));
+	
+	?>
+</body>
+</html>

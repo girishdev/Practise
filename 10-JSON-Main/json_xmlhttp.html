@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+	<div id="test_xmlhttp"></div>
+	<script>
+		var  myArray = [
+						{
+							"display" : "Javascript Tutorial",
+							"url" : "http://www.w3schools.com/js/default.asp"
+						},
+						{
+							"display" : "HTMl Tutorial",
+							"url" : "http://www.w3schools.com/html/default.asp"
+						},
+						{
+							"display" :	"CSS Tutorial",
+							"url" : "http://www.w3schools.com/css/default.asp"
+						}
+					 ];
+		myFunction(myArray);
+		
+		function myFunction(myArray) {
+			var out = '';
+			var i;
+			for(i = 0; i < myArray.length; i++) {
+				out += '<a href="'+ myArray[i].url +'">' + myArray[i].display + '</a><br />';
+			}
+			document.getElementById("test_xmlhttp").innerHTML = out
+		}
+	</script>
+</body>
+</html>

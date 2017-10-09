@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="Templates/index.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Zend PHP 5.3 Certification Exam - ZCE - Consider the following script: - #1</title>
+    <!-- InstanceEndEditable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="http://www.zendexam.com">
+<meta type="key" content="zend php 5.3 exam questions certification ZCE braindump"/>
+<meta type="description" content="Consider the following script: Which of the following tags is used in the php script?"/>
+
+
+<meta property="og:title" content="Zend PHP 5.3 Certification Exam - ZCE - Consider the following script: - #1"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.zendexam.com/images/zce_logo.png"/>
+<meta property="og:url" content="http://www.zendexam.com/"/>
+
+
+<meta property="og:site_name" content="Ze

@@ -1,0 +1,11 @@
+http://getbootstrap.com/css/
+http://getbootstrap.com/components/
+http://getbootstrap.com/css/#overview
+http://tomasjanecek.cz/en/clanky/post/list-of-bootstrap-3-css-classes-with-description
+***https://bootstrapcreative.com/resources/bootstrap-3-css-classes-index/
+http://v4-alpha.getbootstrap.com/content/tables/
+http://getbootstrap.com/css/#buttons
+http://getbootstrap.com/components/#btn-groups
+***http://v4-alpha.getbootstrap.com/components/dropdowns/
+***https://v4-alpha.getbootstrap.com/utilities/colors/
+***http://getbootstrap.com/javascript/#mdo

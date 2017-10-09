@@ -1,0 +1,51 @@
+mysql_num_rows()
+mysql_info()
+mysql_affected_rows()
+mysql_connect()
+mysql_error()
+mysql_select_db()
+mysql_query()
+mysql_free_result()
+mysqli_stmt_num_rows()
+mysql_unbuffered_query()
+mysql_numrows()
+mysql_data_seek()
+mysql_num_fields()
+mysql_num_rows()
+mysql_field_name()
+mysql_fetch_assoc()
+mysql_fetch_array()
+mysql_result()
+mysql_data_seek()
+fetch_array()
+
+
+    msql_select_db
+    fbsql_select_db
+    maxdb_select_db
+    mssql_select_db
+    sybase_select_db
+    stream_select
+    socket_select
+    dbplus_unselect
+    pg_select
+    curl_multi_select
+    newt_listbox_select_item
+    newt_listbox_get_selection
+    mysqlnd_ms_fabric_select_shard
+    mysqlnd_qc_set_is_select
+    mysqlnd_ms_fabric_select_global
+    newt_listbox_clear_selection
+    mysqlnd_ms_query_is_select
+    newt_checkbox_tree_get_selection
+    reflector
+    delete
+    ps_delete
+    splsubject
+    svn_delete
+    solrobject
+    shell_exec
+    reflection
+    sem_get
+    ps_rect
+    newt_checkbox_tree_get_multi_selection

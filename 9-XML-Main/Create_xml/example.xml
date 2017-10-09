@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container>
+  <sale>
+    <iten>Television</iten>
+    <price>$100</price>
+    <address>Bangalore</address>
+    <Owner>Girish kumar</Owner>
+  </sale>
+</container>

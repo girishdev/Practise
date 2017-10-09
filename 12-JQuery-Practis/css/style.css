@@ -1,0 +1,76 @@
+body {
+	background: #abc;
+	border: 1px solid #888;
+	padding: 20px;
+}
+.clearfix:after {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+table, th, tr, td {
+	border: 1px solid #000;
+}
+th, tr, td { 
+	padding: 10px;
+}
+ul {
+	*list-style-type: disc;
+	*list-style-type: circle;
+	*list-style-type: square;
+	list-style-type: none;
+	width: 100%;
+	display: inline-block;
+}
+ul li {
+	float: left;
+	width: 8%;
+	background: orange;
+	padding: 10px;
+	margin-right: 20px;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid green;
+}
+ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+/*ol{
+	type="1";
+	type="A";
+	type="a";
+	type="I";
+	type="i";
+}/**/
+h1 span {
+	color: green;
+}
+iframe {
+	border: none;
+}
+body iframe {
+	background: #cc6600;
+}
+.links a {
+	border: 1px solid #000;
+	display: table-cell;
+	margin: 10px;
+	line-height: 300px;
+}
+input[type="checkbox"]:focus{
+	outline:0;
+}
+
+/*Key responsibility:- UI developer( HTML, CSS, JAVASCRIPT, JQUERY, AJAX ) for 1+ year and from 4 to 5 month's i am working with coding part( PHP, MSQL, TYPO3(CMS) ) along with UI development )
+Key responsibility:- UI developer( HTML, CSS, JAVASCRIPT, JQUERY, AJAX ) for 1+ year and from 9 to 10 month's i am working with coding part( PHP, MSQL, TYPO3(CMS) ) along with UI development )
+
+Profile Summary
+	BSc in computer science with 2 + years experience in software development very much intrested in PHP coading, even on other web development languages also in comming days i would like to become strong PHP developer
+	
+	• Astute learner who quickly grasps highly technical material, ramps up to tasks rapidly and...
+
+9600/**/
+

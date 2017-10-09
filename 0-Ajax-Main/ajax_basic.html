@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!--<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>-->
+
+
+<div id="scores">Get latest scores...</div><br />
+<input type='button' value='Get scores' onclick="getScores()" />
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" language="javascript" >
+	//indivuesl
+	var email = $("#myField").val();
+
+		/*$(document).ready(function(){
+			$.ajax({
+				url : "date.php",
+				data : "",
+				dataType : "text",
+				success : function(stdata){
+					$('#show_data').text(stdata);
+				}
+			});
+		});/**/
+
+		$(document).ready(function(){
+			$('#insert').click(function(event){
+				event.preventDefault();
+				//var url = window.location.href;
+				var url = "date.php";
+				//var url = "ajax_basic.html";
+				$.ajax({
+					//url : 'date.php',
+					url : url,
+					//method : 'POST',
+					type : 'POST',
+					data : $('#fform').serialize(),
+					//dataType : 'html',
+					success : function(strMessage) {
+						$('#message').fadeIn(100).html(strMessage);
+						
+					}
+				});/**/
+				/*var xhr = $.ajax({
+					type: "POST",
+					url: "date.php",
+					data: $('#fform').serialize(),
+					success: function(msg){
+					   alert( "Data Saved: " + msg );
+					}
+				});/**/
+			});
+		});
+
+
+	function loadDoc() {
+		var xhttp;
+		if (window.XMLHttpRequest) {
+			// code for modern browsers
+			xhttp = new XMLHttpRequest();
+		} else {
+			// code for IE6, IE5
+			xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("demo").innerHTML = this.responseText;
+			}
+		};
+		xhttp.open("GET", "ajax_info.txt", true);
+		xhttp.send();
+	}/**/
+	
+	/*function loadDoc() {
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("demo").innerHTML = this.responseText;
+			}
+		};
+		xhttp.open("POST", "ajax_info.txt", true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send("fname=Henry&lname=Ford");
+	}/**/
+
+	xmlhttp = new XMLHttpRequest();
+
+	function getScores() {
+
+		xmlhttp.onreadystatechange = function() {
+
+			if(xmlhttp.readyState == 4 &&  xmlhttp.status == 200) {
+
+				document.getElementById('scores').innerHTML = xmlhttp.responseText;
+
+			} else {
+
+				document.getElementById('scores').innerHTML = "<strong>Wating for server Response</strong>";
+
+			}
+		}
+		
+		//xmlhttp.open("GET", "ajax_php.php", true);
+		xmlhttp.open("GET", "https://www.youtube.com/watch?v=qqRiDlm-SnY", true);
+		xmlhttp.send();
+	}
+	
+</script>
+
+<div id="show_data"></div>
+<div id="message">this is for data test...</div>
+<div id="demo"></div>
+
+	<form id="fform" action="ajax_basic.html" method="post">
+		First name:<input type="text" name="fname" /><br /><br />
+		Last name:<input type="text" name="lname" /></br />
+		<input type="submit" id="insert" name="insert" value="Submit" />
+		<input id="insertkey" type="text" name="email" /></br />
+	</form>
+<br /><br /><br />
+	<form id="fsform" action="ajax_basic.html" method="post">
+		Email :<input type="text" name="fsname" /><br /><br />
+		<!--Last name:<input type="text" name="lsname" /></br />-->
+		<input type="submit" id="isnsert" name="isnsert" value="Submit" />
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<books>
+  <book id="1">
+    <Name>Java</Name>
+    <Price>200</Price>
+  </book>
+  <book id="2">
+    <Name>php</Name>
+    <Price testing="500">300</Price>
+  </book>
+  <Bags>
+    <Bag-1>200</Bag-1>
+  </Bags>
+</books>

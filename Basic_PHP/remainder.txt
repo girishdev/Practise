@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="Templates/index.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Zend PHP 5.3 Certification Exam - ZCE - Consider the following script: - #1</title>
+    <!-- InstanceEndEditable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="http://www.zendexam.com">
+<meta type="key" content="zend php 5.3 exam questions certification ZCE braindump"/>
+<meta type="description" content="Consider the following script: Which of the following tags is used in the php script?"/>
+
+
+<meta property="og:title" content="Zend PHP 5.3 Certification Exam - ZCE - Consider the following script: - #1"/>
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.zendexam.com/images/zce_logo.png"/>
+<meta property="og:url" content="http://www.zendexam.com/"/>
+
+
+<meta property="og:site_name" content="Zend PHP Certification Exam"/>
+<meta property="fb:admins" content="507956458"/>
+<meta property="og:description" content="Consider the following script: Which of the following tags is used in the php script?"/>
+
+    <!-- Le styles -->
+    <link href="http://www.zendexam.com/css/bootstrap.min.css?11:2243" rel="stylesheet" media="screen">
+    <link href="http://www.zendexam.com/css/zend2.css?11:2243" rel="stylesheet" media="screen">
+    <link href="http://www.zendexam.com/css/prettify.css?11:2243" rel="stylesheet" media="screen">
+    
+  <link href="http://www.zendexam.com/css/bootstrap-responsive.css?11:2243" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js?11:2245"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="images/favicon.png">
+                                   
+<!-- InstanceBeginEditable name="head" -->
+  <script>
+  $(function() {
+    $( "#minbeds" ).change(function() {
+      slider.slider( "value", parseInt(this.value) + 1 );
+    });
+  });
+  </script>
+
+<script type="text/javascript">
+
+	
+	d = {};
+	d.ge = function ( id ) {
+		return document.getElementById( id );
+	}
+	d.gebt = function ( tag ) {
+		return document.getElementsByTagName( tag );
+	}
+	
+	function show_solution ( id ) {
+			var list = d.ge('answer_'+id).getElementsByTagName('input');
+			var solution_found = false;
+			//No var i in else it causes weird effects in ie browsers
+			for( var i = 0; i < list.length; i++ ) {
+				var item = list[i];
+				try {
+					var correct = item.getAttribute('correct');
+					var item_id = item.getAttribute('id');
+					if( correct !== null ) {
+						if( correct === '1' ) {
+							//item.checked = true;
+							solution_found = true;
+						} else if( correct.length > 1 ) {
+							item.value = correct;
+							solution_found = true;
+						}
+						$('#label-'+item_id).addClass("active");
+					} else {
+						//item.checked = false;
+					}
+					$('#div-'+item_id).attr('class', 'glow_d');
+					$('#'+item_id).attr('disabled', 'disabled');
+				} catch( e ) { alert( i + ' - ' + e.message ) }
+			}
+			if( ! solution_found ) {
+				alert( 'Sorry, there\'s no solution availabe for this question' );
+			} else {
+				$('#giaidap').show();
+			}
+	}
+	
+$(document).ready(function(){
+
+	
+	}); // end document.ready
+
+</script>
+<!-- InstanceEndEditable -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=138921682973789";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                                   
+  </head>
+
+  <body>
+<div>
+
+    <div id="google-ads-1" style="text-align:center;">
+     <script type="text/javascript">
+     
+        adUnit   = document.getElementById("google-ads-1");
+        adWidth  = adUnit.offsetWidth;
+     
+        /* Replace this with your AdSense Publisher ID */
+        google_ad_client = "ca-pub-1060013879765888";
+     
+        if ( adWidth >= 768 ) {
+          /* Leaderboard 728x90 */
+          google_ad_slot	= "1281644830";
+          google_ad_width	= 768;
+          google_ad_height 	= 90;
+        } else if ( adWidth >= 468 ) {
+          /* Banner (468 x 60) */
+          google_ad_slot	= "7173401235";
+          google_ad_width 	= 468;
+          google_ad_height 	= 60;
+        } else if ( adWidth >= 336 ) {
+          /* Large Rectangle (336 x 280) */
+          google_ad_slot 	= "8650134435";
+          google_ad_width 	= 336;
+          google_ad_height 	= 280;
+        } else if ( adWidth >= 300 ) {
+          /* Medium Rectangle (300 x 250) */
+          google_ad_slot 	= "1126867635";
+          google_ad_width 	= 300;
+          google_ad_height 	= 250;
+        } else if ( adWidth >= 250 ) {
+          /* Square (250 x 250) */
+          google_ad_slot	= "2603600837";
+          google_ad_width 	= 250;
+          google_ad_height 	= 250;
+        } else if ( adWidth >= 200 ) {
+          /* Ad Link Unit (200 x 90) */
+          google_ad_slot 	= "4080334031";
+          google_ad_width 	= 200;
+          google_ad_height 	= 90;
+        } else {
+          /* Do not display the Google Ad */
+          google_ad_slot		= "0";
+          adUnit.style.display	= "none";
+        }
+     </script>
+     
+     <script type="text/javascript"    
+       src="http://pagead2.googlesyndication.com/pagead/show_ads.js?11:2245">
+     </script>
+    </div>
+
+
+</div>
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li style="list-style-type:none;" id="trang1" class="active"><a href="javascript:;" onClick="$('#trang1').addClass('active');$('#trang2').removeClass('active');$('#tab1').show();$('#tab2').hide();">Learning Mode</a></li>
+          <!--<li style="list-style-type:none;" id="trang1" class="active"><a href="javascript:;" onClick="$('#trang1').addClass('active');$('#trang2').removeClass('active');$('#tab1').show();$('#tab2').hide();">Exam Mode</a></li>-->
+          <!--<li id="trang2"><a href="javascript:;" onClick="$('#trang2').addClass('active');$('#trang1').removeClass('active');$('#tab2').show();$('#tab1').hide();">Biểu thuế</a></li>-->
+        </ul>
+        <h3 class="muted">Zend PHP 5.3 Certification Exam</h3>
+      </div>
+
+      <hr>
+
+<div id="tab1"><!-- InstanceBeginEditable name="content" -->
+<div class="">
+  
+  
+  
+  <div style="margin: auto;font-weight:bold;font-size:13pt;padding: 5px 5px 5px 25px;">
+  <div class="dropdown">
+  <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="http://www.zendexam.com/question/1/consider-the-following-scriptwhich-of-the-following-tags-is-used-in-the-php-script/">
+    PHP Basics    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/69/consider-the-following-php-scriptwhat-should-you-write-here-to-print-the-value--web-development-/">Functions and Arrays</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/112/what-will-be-the-result-of-comparing-the-following-two-php-arrays/">Object Oriented Programming</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/146/consider-the-following-php-scriptwhat-will-be-the-output/">Security</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/181/which-of-the-following-is-used-to-retrieve-the-namespaces-used-in-an-xml-document-from-a-simplexmlelement-object/">Data Format &amp; Types</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/217/consider-the-following-scriptwhat-will-be-the-output-of-the-above-php-script/">Strings and Patterns</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/242/you-are-using-a-database-named-humanresource-you-have-to-delete-some-tables-from-the-database-using-sql-statements-which-of-the-following-statements-will-you-use-to-accomplish-the-task/">Databases and SQL</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/263/in-which-of-the-following-ways-will-you-receive-data-from-a-web-page-if-you-do-not-know-how-data-is-sent/">Web Features</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/289/which-of-the-following-file-permissions-is-set-by-the-tempnam-function-for-the-newly-created-temp-file/">INPUT/OUTPUT</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/308/what-is-the-output-of-the-following-php-scriptenter-the-exact-script-output/">Basics 1</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/363/what-php-function-is-used-to-create-a-new-array-pre-filled-with-a-sequential-series-of-values/">Arrays 1</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/399/what-is-the-output-of-the-following-php-scriptenter-the-exact-script-output/">Strings 1</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/500/what-is-the-preferred-way-of-writing-the-value-25-to-a-session-variable-called-age/">Web Features 1</a></li>
+  
+    <li role="presentation" style="list-style-type:none;"><a role="menuitem" tabindex="-1" href="http://www.zendexam.com/question/430/what-is-the-output-of-the-following/">70 Questions</a></li>
+  </ul>
+  
+</div>
+    </div>
+  <div style="margin:auto;padding: 5px 5px 5px 25px;">
+  <a style="width:12px" class="btn btn-mini btn-primary" href="http://www.zendexam.com/question/1/consider-the-following-scriptwhich-of-the-following-tags-is-used-in-the-php-script/">1</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/2/which-of-the-following-equivalence-operations-evaluates-to-true-if-the-two-operands-are-not-of-the-same-data-type-or-do-not-have-the-same-value/">2</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/3/consider-the-following-codewhat-will-be-the-output-of-the-above-code/">3</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/4/you-work-as-a-web-developer-for-remote-inc-what-will-be-the-output-when-you-try-to-run-the-script-below/">4</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/5/which-of-the-following-options-isare-correct-regarding-variable-scopes-in-php/">5</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/6/you-run-the-following-php-scriptwhat-will-be-the-outputeach-correct-answer-represents-a-complete-solution-choose-all-that-apply/">6</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/7/what-is-the-result-when-the-following-php-code-involving-a-boolean-cast-is-executed/">7</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/8/what-will-be-the-output-of-the-following-php-script/">8</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/9/which-of-the-below-provided-options-is-correct-regarding-the-below-code/">9</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/10/which-one-of-the-following-four-logical-operators-of-php-is-not-binary/">10</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/11/what-does-the-following-function-do-when-passed-two-integer-values-for-p-and-q/">11</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/12/consider-the-following-scriptwhat-will-be-the-output-of-the-above-php-script-if-the-older-versions-of-glibc-are-present-in-the-operating-system/">12</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/13/consider-the-following-scriptwhat-will-be-the-output-of-the-above-script/">13</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/14/mark-works-as-a-web-application-developer-for-blue-solutions-inc-he-writes-the-following-codewhat-will-be-the-output-when-mark-tries-to-compile-and-execute-the-code/">14</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/15/what-does-the-following-code-snippet-do/">15</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/16/john-works-as-a-website-developer-for-phpweb-inc-he-is-using-a-windows-operating-system-and-is-also-working-on-php-engine-50-he-develops-the-following-scriptwhat-will-be-the-output-of-the-above-php-script/">16</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/17/which-of-the-following-types-of-errors-halts-the-execution-of-a-script-and-cannot-be-trapped/">17</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/18/which-of-the-following-features-are-undeprecated-in-php-53/">18</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/19/consider-the-following-php-scriptwhat-will-be-the-output-of-the-php-script/">19</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/20/which-of-the-following-statements-explains-the-difference-between-print-and-echo/">20</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/21/what-is-the-output-of-the-following-php-code/">21</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/22/mark-works-as-a-web-developer-for-unicorn-inc-he-develops-an-application-in-php-using-the-following-codewhat-will-be-the-output-of-the-script/">22</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/23/fred-works-as-a-web-developer-in-fastech-inc-he-writes-the-following-scriptwhat-will-be-displayed-as-output-when-fred-attempts-to-run-this-php-script/">23</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/24/consider-the-following-codewhat-will-be-the-value-of-x/">24</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/25/consider-the-following-codewhat-will-be-the-value-of-the-variable-c/">25</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/26/which-of-the-following-are-the-core-extensionseach-correct-answer-represents-a-complete-solution-choose-all-that-apply/">26</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/27/consider-the-following-code-what-will-be-the-output-of-the-above-code/">27</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/28/you-run-the-following-php-scriptwhat-will-be-the-value-of-the-variable-b/">28</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/29/you-have-been-given-a-code-snippet-as-followsyou-want-to-iterate-this-array-and-modify-the-value-of-each-of-its-elements-which-of-the-following-is-the-best-possible-to-accomplish-the-task/">29</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/30/which-of-the-following-code-can-be-used-to-create-case-insensitive-constant/">30</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/31/which-of-the-following-data-types-are-compound-data-types/">31</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/32/consider-the-following-php-scriptwhat-will-be-the-output/">32</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/33/you-run-the-following-php-scriptwhat-will-be-the-output/">33</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/34/consider-the-following-codewhat-will-be-the-output-of-the-program/">34</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/35/in-which-of-the-following-ways-does-the-identity-operator--compare-two-values/">35</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/36/which-of-the-following-statements-isare-false-regarding-functions-in-php/">36</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/37/what-is-the-output-of-the-following-code-snippet/">37</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/38/which-of-the-following-php-variable-names-is-not-a-valid-variable-name/">38</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/39/which-of-the-following-isare-false-regarding-oop-in-php-53/">39</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/40/assume-that-today-is-january-8th-2013-51618-pm-in-mst-time-zone/">40</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/41/what-is-the-value-of-x-in-the-following-code-snippet/">41</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/42/which-of-the-following-functions-returns-current-unix-timestamp/">42</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/43/which-of-the-following-files-can-be-used-to-modify-php-configurations/">43</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/44/which-of-the-following-php-directives-will-you-use-to-display-all-errors-except-notices/">44</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/45/you-run-the-following-php-script/">45</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/46/which-of-the-following-is-used-to-set-a-constant/">46</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/47/what-is-the-length-of-the-hash-generated-by-the-crc32-crypto-function/">47</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/48/which-of-the-following-logical-operators-is-an-equivalence-logical-operator/">48</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/49/which-of-the-following-options-is-not-as-valid-tag-for-php-script/">49</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/50/which-of-the-following-is-a-magic-constant/">50</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/51/which-of-the-following-options-shows-the-correct-if-statement-format/">51</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/52/which-of-the-following-operators-has-the-highest-precedence-order/">52</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/53/which-of-the-following-is-related-to-apc-alternative-php-cache/">53</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/54/which-of-the-following-is-not-a-strongly-typed-language/">54</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/55/which-of-the-following-is-not-a-valid-php-variable-name/">55</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/56/you-run-the-following-php-script/">56</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/57/you-run-the-following-php-scriptwhat-will-be-the-output/">57</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/58/you-run-the-following-scriptwhat-will-be-the-output/">58</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/59/you-run-the-following-php-scriptwhat-will-be-the-output/">59</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/60/you-run-the-following-php-scriptwhat-will-be-the-output/">60</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/61/which-of-the-following-functions-allows-you-to-stack-several-error-handlers-on-top-of-each-other/">61</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/62/consider-the-following-codewhat-will-be-the-value-of-x-and-y/">62</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/63/you-run-the-following-php-scriptwhat-will-be-the-output/">63</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/64/you-run-the-following-script/">64</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/65/you-run-the-following-php-scriptwhat-will-be-the-output/">65</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/66/which-of-the-following-will-you-use-to-iterate-a-php-associative-array/">66</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/67/you-run-the-following-scriptwhat-will-be-the-output/">67</a>
+  <a style="width:12px" class="btn btn-mini" href="http://www.zendexam.com/question/68/you-run-the-following-scriptwhat-will-be-the-output/">68</a>
+  </div>
+  <!--<div style="float:left; width:580px;margin-top: 5px;">
+            <div class="progress progress-info">
+              <div class="bar" style="width: 0%;"></div>
+            </div>
+        </div>-->
+  <div style="clear:both;"></div>
+  <ul>
+    <li class="bs-docs-example" style="list-style-type:none;"> <span class="q_number">Question
+      1/68      </span>
+      <h4 class="question bottom_line"> <span style="line-height: 25px;">
+        Consider the following script:        </span>
+        <p></p>
+        				        <pre class="code"><span style="color: #000000">
+&lt;html&gt;&lt;head&gt;&lt;title&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;is&nbsp;a&nbsp;test&nbsp;script.&lt;/title&gt;&lt;/head&gt;&lt;body&gt;<span style="color: #0000BB">&lt;?php&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">echo&nbsp;</span><span style="color: #DD0000">'This&nbsp;is&nbsp;some&nbsp;sample&nbsp;text'</span><span style="color: #007700">;</span><span style="color: #0000BB">?&gt;</span>&lt;/body&gt;&lt;/html&gt;</span>
+</pre>
+			                <span style="line-height: 25px;">
+          Which of the following tags is used in the php script?          </span>
+              </h4>
+      <div id="answer_1" class="answer bottom_line" autocomplete="off">
+        <form action="/send_solution" method="post" onsubmit="try{control.send_solution(this)}catch(e){}; return false;">
+          <div class="clearfix">
+            				<label for="userans-0" class="option row-fluid"> 
+				<div class="glow" id="div-userans-0">
+				  <div class="pull-left">
+					<div class="input-append option">
+					  <input class="ansopt text-center middle" readonly type="text" value="A">
+					  <label class="add-on " for="userans-0" id="label-userans-0">
+												<input type="radio" id="userans-0" name="answer" value="1" correct="1">
+											  </label>
+					</div>
+				  </div>
+				  <div clss="pull-right">
+					<p class="answer">
+					  <label for="userans-0">
+						Standard tag					  </label>
+					</p>
+				  </div>
+				</div>
+				</label>
+								<label for="userans-1" class="option row-fluid"> 
+				<div class="glow" id="div-userans-1">
+				  <div class="pull-left">
+					<div class="input-append option">
+					  <input class="ansopt text-center middle" readonly type="text" value="B">
+					  <label class="add-on " for="userans-1" id="label-userans-1">
+												<input type="radio" id="userans-1" name="answer" value="1" >
+											  </label>
+					</div>
+				  </div>
+				  <div clss="pull-right">
+					<p class="answer">
+					  <label for="userans-1">
+						ASP tag					  </label>
+					</p>
+				  </div>
+				</div>
+				</label>
+								<label for="userans-2" class="option row-fluid"> 
+				<div class="glow" id="div-userans-2">
+				  <div class="pull-left">
+					<div class="input-append option">
+					  <input class="ansopt text-center middle" readonly type="text" value="C">
+					  <label class="add-on " for="userans-2" id="label-userans-2">
+												<input type="radio" id="userans-2" name="answer" value="1" >
+											  </label>
+					</div>
+				  </div>
+				  <div clss="pull-right">
+					<p class="answer">
+					  <label for="userans-2">
+						Script tag					  </label>
+					</p>
+				  </div>
+				</div>
+				</label>
+								<label for="userans-3" class="option row-fluid"> 
+				<div class="glow" id="div-userans-3">
+				  <div class="pull-left">
+					<div class="input-append option">
+					  <input class="ansopt text-center middle" readonly type="text" value="D">
+					  <label class="add-on " for="userans-3" id="label-userans-3">
+												<input type="radio" id="userans-3" name="answer" value="1" >
+											  </label>
+					</div>
+				  </div>
+				  <div clss="pull-right">
+					<p class="answer">
+					  <label for="userans-3">
+						Short tag					  </label>
+					</p>
+				  </div>
+				</div>
+				</label>
+				
+          </div>
+                    <br>
+          <br>
+                    <div class="giaidap" id="giaidap" style="display:none;"><div class="clearfix"> <span> <b>Explanation:</b> <br>In the above question, the standard php tag format is used, as shown below: <br><br><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&lt;?</span><span class="pln">php</span></li><li class="L1"><span class="pln"> </span><span class="com">/* Write your code here*/</span></li><li class="L2"><span class="pun">?&gt;</span><span class="pln"> </span></li></ol></pre><br><div class="def_factbox default"> <div class="title">Tags available in the php language</div> <div id="factbodydiv107114" class="description snt2"> There are four types of tags available in the php language as follows:<br><ol><li><uc:hed>Standard Tags: </uc:hed>These tags are the standard php tags, which are certainly available and cannot be disabled by changing the php.conf file. The syntax of standard tags is as follows:<br><br><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&lt;?</span><span class="pln">php</span></li><li class="L1"><span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="com">//code</span></li><li class="L2"><span class="pun">?&gt;</span></li></ol></pre></li><li><uc:hed>Short Tags: </uc:hed>These tags are simple to use but can interfere with XML documents. The syntax of short tags is as follows:<br><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&lt;?</span></li><li class="L1"><span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="com">//code</span></li><li class="L2"><span class="pun">?&gt;</span></li><li class="L3"><span class="pln">&nbsp;</span></li><li class="L4"><span class="pln">or</span></li><li class="L5"><span class="pln">&nbsp;</span></li><li class="L6"><span class="pun">&lt;?=</span><span class="pln"> $variable </span><span class="pun">?&gt;</span><span class="pln"> </span></li></ol></pre> (It can be used to print the result of an expression directly in the output of the script.)</li><li><uc:hed>Script Tags: </uc:hed> These are simple HTML language tags. The syntax of script tags is as follows:<br><br><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">language</span><span class="pun">=</span><span class="atv">"php"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="com">//code</span></li><li class="L2"><span class="tag">&lt;/script&gt;</span><span class="pln"> </span></li></ol></pre></li><li><uc:hed>ASP Tags: </uc:hed>These are simple ASP tags. The syntax of ASP tags is as follows:<br><br><pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="pun">&lt;%</span></li><li class="L1"><span class="pln">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="com">//code</span></li><li class="L2"><span class="pun">%</span><span class="pln"> </span><span class="pun">&gt;</span></li></ol></pre></li></ol> </div> </div><br><br><uc:ref>Reference: <a target="_blank" href="http://www.php.net" tabindex="-1">http://www.php.net</a></uc:ref> </span> </div></div>
+          <div class="giaidap2" id="giaidap2" style="display:none;"></div>
+                    <div class="centered" style="padding-bottom:5px;">
+            <button class="btn btn-large btn-primary" onclick="show_solution('1'); return false;"><i class="icon-star icon-white"></i> Solve it</button>
+          </div>
+                                                  <div style="float:right;">
+            <a class="btn btn-info text-right" href="http://www.zendexam.com/question/2/which-of-the-following-equivalence-operations-evaluates-to-true-if-the-two-operands-are-not-of-the-same-data-type-or-do-not-have-the-same-value/"><i class="icon-forward icon-white"></i> Next</a>
+          </div>
+                    <div style="clear:both;"></div>
+        </form>
+      </div>
+      <div class="comments centered">
+        <div class="fb-comments" data-width="470" data-num-posts="10"></div>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- InstanceEndEditable --></div>
+
+
+
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; 2013 Zend PHP Certification Exam</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-1.9.1.js?11:2245"></script>
+
+<script src="http://www.zendexam.com/js/bootstrap.min.js?11:2245"></script>
+<script src="http://www.zendexam.com/js/global.js?11:2245"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-28475477-13', 'zendexam.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+<!-- InstanceEnd --></html>

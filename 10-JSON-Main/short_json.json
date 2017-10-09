@@ -1,0 +1,55 @@
+The following JSON example defines an employees object, with an array of 3 employee records:
+	JSON Example
+	{"employees":[
+		{"firstName":"John", "lastName":"Doe"},
+		{"firstName":"Anna", "lastName":"Smith"},
+		{"firstName":"Peter", "lastName":"Jones"}
+	]}
+	
+	{"emp":[
+			{"Fname":"Girish", "Lname":"kumar"},
+			{"Fname":"Raj", "Lname":"kumar"}
+	]}
+	
+JSON Objects
+	{"firstName":"John", "lastName":"Doe"}
+
+JSON Arrays
+	"employees":[
+		{"firstName":"John", "lastName":"Doe"}, 
+		{"firstName":"Anna", "lastName":"Smith"}, 
+		{"firstName":"Peter","lastName":"Jones"}
+	]
+	
+Array of objects and assign data
+	var employees = [
+		{"firstName":"John", "lastName":"Doe"},
+		{"firstName":"Anna", "lastName":"Smith"},
+		{"firstName":"Peter","lastName": "Jones"}
+	];
+	
+Accessing array of objects
+	<script>
+		var employees = [
+			{
+			"firstName":"John",
+			"lastName":"Doe"
+			},
+			{
+			"firstName":"Anna",
+			"lastName":"Smith"
+			},
+			{
+			"firstName":"Peter",
+			"lastName":"Jones"
+			}
+		];
+		document.getElementById("demo456").innerHTML = '<h1>' + employees[0].firstName + " " + employees[0].lastName + '</h1>';
+		//document.getElementById("demo456").innerHTML = employees[0].firstName + " " + employees[1].lastName;
+
+	</script>
+	
+A common use of JSON is to read data from a web server, and display the data in a web page.
+
+
+

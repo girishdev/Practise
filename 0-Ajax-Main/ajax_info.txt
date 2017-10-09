@@ -1,0 +1,60 @@
+acer aspire 4738 Kay board set			= 400 (1868.08)
+	http://www.acerspareparts.co.uk/product/27609/Acer-UK-Keyboard---Black/
+acer aspire 4738 Power abapter			= 750
+acer aspire 4738 Battery				= 1400
+
+acer aspire 4738 DVD Drive				= 4060
+acer aspire 4738 Processer fan			= 4060	(2300.51)
+
+acer aspire 4738 Hard disk			= 	(1793.65)
+	http://hddcaddy.com/en/acer-hdd-caddy/339-acer-aspire-4730-4732-4733-4736-4736-4738-4740-4741-hdd-caddy.html
+
+
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.
+
+Test - AJAX is not a new programming language.
+
+Test - AJAX is a technique for creating fast and dynamic web pages.

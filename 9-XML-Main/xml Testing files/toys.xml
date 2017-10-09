@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<toys>
+	<toy>
+		<name>Ben 10 Watch</name>
+		<type>Battery Toys</type>
+	</toy>
+	<toy>
+		<name>Angry Birds Gun</name>
+		<type>Mechanical Toys</type>
+	</toy>
+</toys>
+
+xml tutorial:-
+	https://www.tutorialspoint.com/xml/xml_character_entities.htm
+	http://www.zendexam.com/question/192/which-of-the-following-functions-can-you-use-to-add-dataeach-correct-answer-represents-a-complete-solution-choose-all-that-apply/
+	
+	http://www.w3schools.com/php/php_ref_simplexml.asp
+	http://www.w3schools.com/php/php_ref_xml.asp
+	
+	
+	https://www.tutorialspoint.com/php/php_and_xml.htm
+	http://php.net/manual/en/book.xml.php
+	http://php.net/manual/en/xmlreader.xml.php
+	http://php.net/manual/en/simplexmlelement.tostring.php
+	
+	

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root>
+  <info>
+    <name>Girish</name>
+    <add>Yelahanka</add>
+  </info>
+  <info>
+    <name>Hema</name>
+    <add>Chikkabommasandra</add>
+  </info>
+  <info>
+    <name>Raj</name>
+    <add>123</add>
+  </info>
+  <info>
+    <name>kumar</name>
+    <add>147</add>
+  </info>
+  <info>
+    <name>Rupa</name>
+    <add>159</add>
+  </info>
+  <info>
+    <name>Again rupa</name>
+    <add>Yelahanka</add>
+  </info>
+  <info>
+    <name>Keshava</name>
+    <add>Hebbal</add>
+  </info>
+  <info>
+    <name>ABC</name>
+    <add>All</add>
+  </info>
+  
+</root>

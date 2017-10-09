@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML practise</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$.ajax({
+				url : "date.php",
+				data : "",
+				dataType : "text",
+				success : function(stdata){
+					$('#show_data').text(stdata);
+				}
+			});
+		});
+	
+		/*$(document).ready(function(){
+			$("button").click(function(){
+				/*$.ajax({
+					url: "demo.txt",
+					success: function(result){
+						$("#div").html(result);
+					}
+				});
+				$.ajax({
+					url: "demo.txt",
+					cache: false,
+					success: function(html){
+						$("#div").append(html);
+					}
+				});
+			});
+		});/**/
+		
+		$("form#submit_form").submit(function(){
+			$.ajax({
+				type : "POST",
+				url : "index.html",
+				data : $('#submit_form').serialize(),
+				success : function(data){
+					$("#response").fadeIn().html(data);
+				}
+			});
+			return false;
+		});
+
+		$("form#submit_form").submit(function() {
+			//jQuery('#ajax_loader').show();
+			var url = window.location.href;
+			jQuery.ajax({
+				type: "POST",
+				url: url,
+				data: $("#submit_form").serialize(),
+				success: function(data) {
+					$("#response").fadeIn().html(data);
+					//jQuery(".three_column").html(jQuery(data).find(".three_column").html());
+					//eachrowheight();
+					//jQuery('#ajax_loader').hide();
+				}
+			});
+			return false;
+		});
+
+		/*function loadXMLDoc(){
+			//var xmlhttp = new XMLHttpRequest();
+			var xmlhttp;
+			if(window.XMLHttpRequest){
+				xmlhttp = new XMLHttpRequest();
+			} else {
+				xmlhttp = new ActionXObject('Microsoft.XMLHTTP');
+			}
+			xmlhttp.onreadystatechange = function(){
+				if (this.readyState == 4 && this.status == 200) {
+					document.getElementById("demo").innerHTML = this.responseText;
+				}
+			};
+			xmlhttp.open("POST", "test.txt", true);
+			xmlhttp.send();
+		}/**/
+		
+		
+		var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+		var obj = JSON.parse(text);
+		
+		document.getElementById("demo").innerHTML = obj.name + '<br/ >' + obj.street + '<br />' + obj.phone;
+		
+	</script>
+	
+	
+	
+</head>
+<body>
+	
+	<div id="show_data"></div>
+
+		<button type="button" onclick="loadXMLDoc()">Change Content</button>
+
+		<p id="demo">JSON</p>
+		<p id="demo123">JSON</p>
+		<p id="demo456">JSON</p>
+		
+<script>
+var employees = [
+    {
+    "firstName":"John",
+    "lastName":"Doe"
+    },
+    {
+    "firstName":"Anna",
+    "lastName":"Smith"
+    },
+    {
+    "firstName":"Peter",
+    "lastName":"Jones"
+    }
+];
+document.getElementById("demo456").innerHTML = '<h1>' + employees[0].firstName + " " + employees[0].lastName + '</h1>';
+//document.getElementById("demo456").innerHTML = employees[0].firstName + " " + employees[1].lastName;
+
+</script>
+
+<p id="jsonparse">Test this jsonparse</p>
+<script>
+	var text = '{"employees":[' +
+					'{"firstName":"John","lastName":"Doe" },' +
+					'{"firstName":"Anna","lastName":"Smith" },' +
+					'{"firstName":"Peter","lastName":"Jones" }
+				]}';
+	var employees = [
+		{"firstName":"John", "lastName":"Doe"},
+		{"firstName":"Anna", "lastName":"Smith"},
+		{"firstName":"Peter","lastName": "Jones"}
+	];
+
+	obj = JSON.parse(text);
+
+	document.getElementById("jsonparse").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+	<script>
+		var text = '{"name":"John Johnson","street":"Oslo West 16","phone":"555 1234567"}';
+		var obj = JSON.parse(text);
+		
+		document.getElementById("demo123").innerHTML = obj.name + '<br/ >' + obj.street + '<br />' + obj.phone;
+		
+	</script>
+<div id="div">This is testing Ajax...</div>
+<button>Ajax</button>
+
+	<form id="submit_form" method="POST">
+		<input type="text" name="fname" />
+		<input type="submit" name="sub_vals" />
+		<!--<input id="ckbx" type="checkbox" value="map_one"><span>This is for test</span>-->
+	</form>
+	<div id='response'></div>
+<!--<span align="center" style="border:1px solid red;">
+    This is some text in a div element!
+</span>-->
+<div style="text-align: center;">
+    <span style="border:1px solid red;">
+        This is some text in a div element!
+    </span>
+</div>
+	<body style="height:100%">
+		<div style="height:200px">
+			<p style="height:100%; display:block;">Hello, world!</p>
+		</div>
+	</body>
+		
+	<div class="menu clearfix">
+		Unordered list
+		<ul>
+			<li><a href="http://google.com">Google</a></li>
+			<li><a href="http://facebook.com">Facebook</a></li>
+			<li><a href="http://twitter.com">Twitter</a></li>
+			<li><a href="">Menu 4</a></li>
+		</ul>
+		<!--ordered list
+		<ol type="A">
+			<li>Menu 1</li>
+			<li>Menu 2</li>
+			<li>Menu 3</li>
+			<li>Menu 4</li>
+		</ol>-->
+	</div>
+	
+	<form>
+		F Name:
+		<input class="placeholertest" type="text" autocomplete="off" name="name">
+		L Name:
+		<input type="text" autocomplete="off" name="lname">
+		<input type="submit" value="login">
+	</form>	
+	
+	<br><br>
+	
+	
+	<form>
+		Birthday:
+		<input type="date" name="bday">
+		<input type="submit">
+	</form>
+	
+<form>
+  Birthday:
+  <input type="date" name="bday">
+  <input type="submit">
+</form>
+	
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor" value="#ff0000">
+  <input type="submit">
+</form>
+	
+	<h1>Hi This is first Javascript</h1>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">For Date Click here:</button>
+	<div id="demo"></div>
+	
+	<script>
+		document.getElementById('demo').innerHTML = "Hello World";
+	</script>
+	
+	<span>Here javascript can change content of an html element</span>
+	<br />
+	<input value="Click Me to see changes" type="submit" onclick="myFun()" />
+	<div id="demo2">This DEMO2 just for Demonstration puropse only...</div>
+	<script>
+		function myFun(){
+			document.getElementById('demo2').innerHTML = 'Hello This is javascript';
+			document.getElementById('demo2').style.fontSize = '50px';
+			document.getElementById('demo2').style.color = "red";
+			document.getElementById('demo2').style.background = "blue";
+		}
+	</script>
+<hr >
+<div class="container5">
+	<header>
+		<h1>City Gallery</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">London</a></li>
+			<li><a href="#">Paris</a></li>
+			<li><a href="#">Tokyo</a></li>
+		</ul>
+	</nav>
+	<article>
+	  <h1>London</h1>
+	  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+	  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+	</article>
+<footer>Copyright © W3Schools.com</footer>
+</div>
+<hr >
+	<!--<div class="iframe_content">
+		<iframe src="http://www.w3schools.com/jquery/event_hover.asp" width="800" height="400"></iframe>
+		
+		<iframe height="300px" width="600px" name="iframe_a"></iframe>
+		<a href="http://www.w3schools.com" target="iframe_a">w3schools.com</a>
+	</div>-->
+
+	<div class="container clearfix">
+		<h1>Hello</h1>
+		<h1>My <span>Important</span> Heading</h1>
+		<div class="links">
+			<a href="http://google.com" target="_blank">
+				<img src="images/ggoogle.gif" alt="google" style="width:200px;height:auto;">
+			</a>
+			
+			<a href="http://facebook.com" target="_self">
+				<img src="images/facebook.jpg" alt="facebook" style="width:150px;height:auto;">
+			</a>
+			
+			<a href="http://twitter.com" target="_parent">
+				<img src="images/twitter.jpg" alt="twitter" style="width:200px;height:auto;">
+			</a>
+			
+			<a href="http://google.com" target="_top">
+				<img src="images/ggoogle.gif" alt="google" width=200; height=auto;>
+			</a>
+		</div>
+
+		<div class="tables">
+			<table>
+				<tr>
+					<th>Name:</th>
+					<th>Phone:</th>
+					<th>Email:</th>
+				</tr>
+				<tr>
+					<td>Girish</td>
+					<td>8892240256</td>
+					<td>girishkumar.aorg@gmail.com</td>
+				</tr>
+				<tr>
+					<td>kumar</td>
+					<td>8123113655</td>
+					<td>kumar04091990@gmail.com</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

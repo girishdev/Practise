@@ -1,0 +1,18 @@
+.table, .table tr, .table td {
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	padding: 2px;
+	text-decoration: none;
+	list-style: none;
+}
+.highlight{
+	background-color: #abc;
+}
+.dim_gray {
+	*background-color: #696969;
+	background-color: red;
+}
+#texts {
+	color: green;
+	
+}
