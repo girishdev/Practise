@@ -24,7 +24,7 @@ echo "What is Interface ?";
 	Also while defining method in your interface do not use abstract keyword in your methods.
 	You can also extend interface like class. You can extend interface in php using extends keyword.
 	You can not implement 2 interfaces if both share function with same name. It will throw error.
-	Fatal error: Interface function a::foo() cannot contain body in C:\xampp\htdocs\Example_programs\Practise\1-Oops-Main\Opp's-concepts\1.7-Oop's-Interfaces.php on line 62
+	Fatal error: Interface function a::foo() cannot contain body in C:\xampp\htdocs\Example_programs\Practise\5-Oops-Main\Opp's-concepts\1.7-Oop's-Interfaces.php on line 62
 
 	Differences between abstract class and interface in PHP
 
@@ -34,7 +34,7 @@ echo "What is Interface ?";
 		=>Multiple and multilevel both type of inheritance is possible in interface. But single and multilevel inheritance is possible in abstract classes.
 		=>Method of php interface must be public only. Method in abstract class in php could be public or protected both.
 		***=>In abstract class you can define as well as declare methods. But in interface you can only defined your methods & we can't define our method.
-		***=>Fatal error: Interface function a::foo() cannot contain body in C:\xampp\htdocs\Example_programs\Practise\1-Oops-Main\Opp's-concepts\1.7-Oop's-Interfaces.php on line 62/**/
+		***=>Fatal error: Interface function a::foo() cannot contain body in C:\xampp\htdocs\Example_programs\Practise\5-Oops-Main\Opp's-concepts\1.7-Oop's-Interfaces.php on line 62/**/
 
 	echo '<h3>AbstractClass:</h3>';
 	abstract class AbstractClass {

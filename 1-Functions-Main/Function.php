@@ -231,7 +231,7 @@
 	$fr = lastfunc(); // with out first list this line says => Call to undefined function nextfunc()
 	//$fu = myFunc;	// Use of undefined constant myFunc - assumed 'myFunc'
 	//$fu();	//Undefined variable: fu &&
-	//Function name must be a string in H:\xampp\htdocs\projects\Example_programs\Practise\Basic_PHP\Aug15.php on line 44
+	//Function name must be a string in H:\xampp\htdocs\projects\Example_programs\Practise\0-Basic_PHP\Aug15.php on line 44
 	/**/
 
 	/*echo 'Passing multiple argument :'.'<br/>';

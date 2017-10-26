@@ -32,7 +32,7 @@
 $last_names = array_column($a, 'first_name', 'last_name');
 print_r($last_names);/**/
 	
-	//echo $h = '<a href="/Example_programs/practise/Basic_PHP/Strings/string_oct.php">string_oct.php</a>';
+	//echo $h = '<a href="/Example_programs/practise/0-Basic_PHP/Strings/string_oct.php">string_oct.php</a>';
 	/*$number = range('A','Z');
 	$number = range('A','z');
 	print_r ($number);/**/

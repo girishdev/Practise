@@ -48,7 +48,7 @@
 	echo '<br />';
 	unset($var);
 	$var = '62';
-	//reset($var); //reset() expects parameter 1 to be array, string given in H:\xampp\htdocs\projects\Example_programs\Practise\Basic_PHP\Aug15.php on line 71
+	//reset($var); //reset() expects parameter 1 to be array, string given in H:\xampp\htdocs\projects\Example_programs\Practise\0-Basic_PHP\Aug15.php on line 71
 	echo '<br />';
 	echo $var;
 	echo '<br />';
