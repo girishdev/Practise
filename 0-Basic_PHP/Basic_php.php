@@ -3,10 +3,13 @@
 /*
 	Test Basic
 /**/
+
 	/*$x = 10;
 	echo $x;
 	echo '<br />';
 	echo "${x}";
+	echo '<br />';
+	echo "{$x}";
 	echo '<br />';
 	echo '$x';
 	echo '<br />';
@@ -20,7 +23,7 @@
 	echo '<br />';
 	echo $foo;
 	echo '<br />';
-	//echo 'test Bar' . $$$bar;/**/
+	echo 'test Bar' . $$$bar;/**/
 
 	/*$name = '123';
 	$$name = '456';
@@ -54,12 +57,20 @@
 	echo '<br />';
 	echo '<br />';
 	echo count($var);/**/
-	
-	/*$yes = array('this', 'is', 'an array');
+
+
+	// ***** Array *****
+ 	/*$yes = array('this', 'is', 'an array');
 	//$yes = 'variable';
-	echo $yes ? 'Array' : 'not an Array';
+	echo $yes ? 'This is an Array' : 'not an Array';
 	echo '<br />';
-	echo is_array($yes) ? 'Array' : 'not an Array';/**/
+	echo is_array($yes) ? 'Array' : 'not an Array';
+	echo '<br />';echo '<br />';
+	if(is_array($yes)){
+		echo 'Yes this is an array: ';
+	} else {
+		echo 'No this is not an array: ';
+	}/**/
 	
 	/*$var = 25.23;
 	if (is_float($var)) {
@@ -73,7 +84,10 @@
 	echo '<br />';
 	echo (int) $vsr;
 	echo '<br />';
+	echo (float) $vsr;
+	echo '<br />';
 	echo (int) ('someval');
+	echo '<br />';
 	echo (int) ('0');
 	echo '<br />';
 	if( '0' ){
@@ -88,15 +102,21 @@
 
 	echo $firstname;
 	echo '<br />isset example: ';
-	if ( isset($pwd)){
+	if ( isset($firstname) )
+	{
 		echo 'variable is defined';
-	}else{
+	}
+	else
+	{
 		echo 'varaible not defined';
 	}/**/
 
 	/*echo '<br /> Constants: ';
 	define('MYEMAIL','p@c.com');
-	echo MYEMAIL;/**/
+	echo MYEMAIL;
+	ECHO '<BR />';
+	echo 'This is Constant mail: ' . MYEMAIL;
+	/**/
 	
 	/*echo '<br />String comparison <br />';
 	$lt = 'ABC';
@@ -119,7 +139,7 @@
 	/*echo '<br />Email comparison <br />';
 	$user = strtoupper('sHruti@gmail.com');
 	$db = strtoupper('Shruti@gmail.com');
-	//$db = strtolower('Shruti@gmail.com');
+	//	$db = strtolower('Shruti@gmail.com');
 
 	if( $user == $db){
 		echo 'user found';
@@ -137,18 +157,21 @@
 	/*echo '<br /> Incremental / decremental Operators: <br />';
 	$mynum = 3;
 	$num_a = ++$mynum;
-	echo $num_a. "<br />";
+	echo $num_a. "<br />";echo '<br />';
+
 	$mynum = 3;
 	$num_b = $mynum++;
-	echo $num_b. "<br />";
+	echo $num_b. "<br />";echo '<br />';
+
 	$mynum = 3;
 	$num_c = --$mynum;
-	echo $num_c. "<br />";
+	echo $num_c. "<br />";echo '<br />';
+
 	$mynum = 3;
 	$num_d = $mynum--;
-	echo $num_d. "<br />";/**/	
+	echo $num_d. "<br />";echo '<br />';/**/
 	
-	/*echo '<br />referencing the variables: <br />';
+	/*echo '<br />Referencing the variables: <br />';
 	echo 'Pass by val <br />';
 	$a = 10;
 	$b = $a;
@@ -167,7 +190,7 @@
 	echo 'a:' .$a . "<br />";
 	$a = 30;
 
-	echo 'b:' .$b;
+	echo '<b>*** Please Note this - b: </b>' .$b; //*** Please Note this
 
 	echo '<br />Comparison operator: <br />';
 	unset($b);
@@ -232,7 +255,7 @@
 	}else{
 		echo 'no match';
 	}
-	echo '<br />Error suppression <br />';
+	echo '<br /><b>Error suppression: </b><br />';
 	echo $somevariable;
 	echo @$somevariable ." example";
 
@@ -251,7 +274,7 @@
 	$loginstate = ($user == $db AND $userP == $dbP)?'loggedin':'not logged';
 	echo $loginstate;/**/
 	
-	/*echo 'BOOLVAL';
+	/*echo 'BOOLVAL: ';echo '<br />';
 	echo '0:        '.(boolval(0) ? 'true' : 'false') . '<br />';echo '<br />';
 	echo '42:       '.(boolval(42) ? 'true' : 'false') . '<br />';echo '<br />';
 	echo '0.0:      '.(boolval(0.0) ? 'true' : 'false') . '<br />';echo '<br />';
@@ -263,7 +286,6 @@
 	echo '[1, 2]:   '.(boolval([1, 2]) ? 'true' : 'false') . '<br />';echo '<br />';
 	echo '[]:       '.(boolval([]) ? 'true' : 'false') . '<br />';echo '<br />';
 	echo 'stdClass: '.(boolval(new stdClass) ? 'true' : 'false') . '<br />';echo '<br />';
-	
 	
 	$val = 42;
 	echo boolval($val) ? 'YES':'NO';
@@ -278,10 +300,34 @@
 	
 	//http://stackoverflow.com/questions/4221645/why-the-refcount-is-2-not-1
 	//http://stackoverflow.com/questions/3764686/get-the-reference-count-of-an-object-in-php
-	
+
 	/*$var = 1;              # $var's Refcount = 1
 	//$var = 'Girish kumar A';              # $var's Refcount = 1
 	debug_zval_dump($var); # $var is passed by refrence intarlly./**/
+
+	/*
+	// To see Memory Usage:
+	function convert($size){
+		$unit = array('b','kb','mb','gb','tb','pb');
+		return @round($size/pow(1024, ($i = floor(log($size,1024)))),2) . ' ' .$unit[$i];
+	}
+	echo convert(memory_get_usage(true));/**/
+
+	/*
+	// To check time take to execute function
+	$start = microtime(true);
+	for ($x=0;$x<10000;$x++) {
+		$x;
+	}
+	sleep(3);
+	$end = microtime(true);
+	echo '<br /><b>It took ' . ($end-$start) . ' seconds!</b>'; /**/
+
+//	$time_start = microtime(true);
+//	// Sleep for a while
+//	usleep(2);
+//	$time_end = microtime(true);
+//	echo $time = $time_end - $time_start;
 
 	/*$var = '122.34343The';
 	$float_value_of_var = floatval($var);
@@ -291,60 +337,25 @@
 	$float_value_of_var = floatval($var);
 	echo $float_value_of_var;/**/
 	
-	
-	/*$var = 6;
-	//$var = NULL;
-	// Evaluates to true because $var is empty
-	if (empty($var)) {
-		echo '$var is either 0, empty, or not set at all';
-		echo '<br />';
-	} else {
-		echo 'Value is not empty : '.$var;
-		echo '<br />';
-	}
+//	$b = array(1, 1, 2, 3, 5, 8);
+//	$arr = get_defined_vars();
+//	print_r($arr["b"]);
 
-	// Evaluates as true because $var is set
-	if (isset($var)) {
-		echo '$var is set even though it is empty';
-		echo '<br />';
-	}/**/
-	
-/*	$b = array(1, 1, 2, 3, 5, 8);
-	$arr = get_defined_vars();
-	
-	// print $b
-	print_r($arr["b"]);
-
-	/* print path to the PHP interpreter (if used as a CGI)
-	 * e.g. /usr/local/bin/php */
-//	echo $arr["_"];
-
-	// print the command-line parameters if any
-//	print_r($arr["argv"]);
-
-	// print all the server vars
-//	print_r($arr["_SERVER"]);
-
-	// print all the available keys for the arrays of variables
-	//echo '<br />';
-//	print_r(array_keys(get_defined_vars()));/**/
-	
-/*	$data = array(1, 2.3, 1., NULL, new stdClass, 'foo');
+	/*$data = array(1, 2.3, 1., NULL, new stdClass, 'foo');
 	foreach ($data as $value) {
 		echo gettype($value), "\n";
 		echo '<br />';
 	}
 	//echo '<br />';
-	//$data = 21.36;
-	//echo gettype($data);/**/
-	
+	$data = 21.36;
+	echo gettype($data);/**/
+
 	// This will import GET and POST vars
 	// with an "rvar_" prefix
-	//import_request_variables("gp", "rvar_");
-	//echo $rvar_foo;
+//	import_request_variables("gp", "rvar_");
+//	echo $rvar_foo;
 
 	/*echo 'INTVAL';
-	
 	echo intval(42);echo '<br />';                      // 42
 	echo intval(4.2);echo '<br />';                     // 4
 	echo intval('42');echo '<br />';                    // 42
@@ -599,7 +610,7 @@
 	/*$x = 10;
 	echo 10 == $x ? 'YES':'NO';/**/
 	
-	/*$a = 1;
+	/*$a = 120;
 	switch($a){
 		case 1:
 			echo 'This is first place';
@@ -617,11 +628,11 @@
 			echo 'This is 12th  place';
 			break;
 		default:
-			echo 'You dont have any place';
+			echo 'Sorry you don\'t have any place!';
 			break;
 	}/**/
 	
-	/*echo '<br />Switch Case example<br />';
+	/*echo '<br />Switch Case example: <br />';
 	$mychoice=0;
 
 	if( isset( $_GET['anyname'] ) ){
@@ -632,7 +643,7 @@
 		case 2: echo 'selected two';break;
 		case 3: echo 'selected three';break;
 		case 4: echo 'selected four';break;
-		default:echo 'you have not chosen anything yet';
+		default:echo 'You have chosen something else...';
 	}/**/
 
 	/*$ij = 1;
@@ -706,7 +717,7 @@
 
 	/*echo '<br />FOR Loop example<br />';
 	for($x=0,$j=20; $x<10 AND $j<=20 ;$x++, $j--){
-		echo $x .' :x' . $j . ' :j' . "<br />";
+		echo $x .' :x ' . $j . ' :j' . "<br />";
 	}/**/
 	
 	/*$b = array(34,676,89);
@@ -832,39 +843,39 @@
 			echo 'Out of range';
 			echo '<br />';
 	}/**/
-	
-	
-	
-	$totalRows =5;
-	$totalStar=1;
-	for($rows=1; $rows<=$totalRows; $rows++){
-		if($rows!=1){
-			$totalStar+=2;
-		}
-		$cols=$totalStar;
-		$space = $space1 = $totalRows-$rows; 
 
-		/** create first space **/ 
-		while($space>0){
-			echo ' ';
-			$space--;
-		}
 
-		/** create star **/
-		while($cols>0){
-			echo "* ";
-			$cols--;
-		}
 
-		/** create second space **/ 
-		while($space1>0){
-			echo ' ';
-			$space1--;
-		}
-
-		echo "";
-	}
-
+	//Creating an asterisk symbol
+//	$totalRows =5;
+//	$totalStar=1;
+//	for($rows=1; $rows<=$totalRows; $rows++){
+//		if($rows!=1){
+//			$totalStar+=2;
+//		}
+//		$cols=$totalStar;
+//		$space = $space1 = $totalRows-$rows;
+//
+//		/** create first space **/
+//		while($space>0){
+//			echo ' ';
+//			$space--;
+//		}
+//
+//		/** create star **/
+//		while($cols>0){
+//			echo "* ";
+//			$cols--;
+//		}
+//
+//		/** create second space **/
+//		while($space1>0){
+//			echo ' ';
+//			$space1--;
+//		}
+//
+//		echo "";
+//	}
 	
 	
 	

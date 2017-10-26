@@ -1016,7 +1016,7 @@ girishkumarias@gmail.com/**/
 		public function __construct() {
 			$this->created = time();
 			//$this->logfile_handle = fopen('/tmp/log.txt', 'w');
-			//$this->logfile_handle = fopen('Aug11testing_file/Practise/Example_programs/projects/htdocs/tmp/log.txt', 'w');
+			//$this->logfile_handle = fopen('Aug11testing_file-Function/Practise/Example_programs/projects/htdocs/tmp/log.txt', 'w');
 		}
 	}
 	class Penguin extends Animal {
