@@ -43,7 +43,7 @@
 	
 	// function adder2
 		function adder2($str2){
-			$str2 .= 'Call By Value';  
+			$str2 .= 'Call By Value';
 		}  
 		$str = 'Hello ';  
 		adder2($str);  

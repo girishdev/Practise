@@ -3,10 +3,10 @@
 	function sayHello($name) {
 		echo "Hello $name";
 	}
-	sayHello('Girish');
-	
+	sayHello('Girish kumar');
+
 	echo '<br />';echo '<br />';
-	
+
 	function sayHello2($name, $age){
 		echo "Hello $name your age is  $age";
 	}
@@ -24,8 +24,8 @@
 	echo '<br />';echo '<br />';
 	
 	function fun_arg($arg) {
-		echo $num_arg = func_num_args() . '<br />';
-		echo $get_arg = func_get_arg(1) . '<br />';
+		echo 'Number of arguments: ' . $num_arg = func_num_args() . '<br />';
+		echo "Get specific argument: " . $get_arg = func_get_arg(2) . '<br />';
 		global $get_args;
 		$get_args = func_get_args();
 		var_dump($get_args);

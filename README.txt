@@ -6,8 +6,8 @@ Main Link:-
     http://www.phpforkids.com/php/php-tutorial-table-of-contents.php
 
 Php:-
-    0-PHP Basic
-    1-PHP Function
+    0-PHP Basic          - OK
+    1-PHP Function       -
     2-PHP String
     3-PHP Array
     4-PHP DateTime
@@ -19,6 +19,8 @@ Php:-
     10-PHP JSON
 
 - PHP break and continue
+
+- Know about the status codes(link 400, 500)
 
 
 

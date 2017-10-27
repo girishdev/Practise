@@ -1,6 +1,6 @@
 <?php
-	echo '<h1>This is Test problems file: </h1>';
-	/*function authentication(){
+	/*echo '<h1>This is Test problems file: </h1>';
+	function authentication(){
 		if($_SERVER['PHP_AUTH_USER'] !== 'admin' && $_SERVER['PHP_AUTH_PW'] !== 'admin123'){
 			//if(empty($_SERVER['PHP_AUTH_USER'])){}
 			header("WWW-Authenticate: Basic realm=\"Hi Girish\"");
@@ -10,9 +10,8 @@
 		}
 	}
 	authentication();/**/
-	
-	/*
-	session_start();
+
+	/*session_start();
 	//if(isset($_SESSION['username'])){}
 	if(isset($_POST['login_form'])){
 		$_SESSION['sess_user'] = $_POST['username'];
@@ -89,12 +88,27 @@
 	}
 	$array = array (1, 2, 3);
 	modifyArray($array);
-	print_r($array);/**/
+	print_r($array);
+
+	echo '<br />';echo '<br />';echo '<br />';
+
+	function modifyArray2 (&$array2) {
+		foreach ($array2 as &$value2) {
+			echo 'Value: '.$value2 = $value2 + 2;
+			echo '<br />';
+		}
+		echo 'Last after foreach: '.$value2 = $value2 + 3;
+		echo '<br />';
+	}
+	$array2 = array (1, 2, 3);
+	modifyArray2($array2);
+	print_r($array2);
+	/**/
 	
     /*$a = array (1, 2, 3);
-    $b = array (1 => 2, 2 => 3, 0 => 1); 
+    $b = array (1 => 2, 2 => 3, 0 => 1);
     $c = array ('a' => 1, 'b' => 2, 'c' => 3);
-    //var_dump ($a = $b);echo '<br />';
+//    var_dump ($a = $b);echo '<br />';
     var_dump ($a == $b);echo '<br />';
     var_dump ($a === $b);echo '<br />';
     var_dump ($a == $c);echo '<br />';
@@ -105,7 +119,7 @@
 	}
 	echo magic(250, 30);/**/
 	
-	/*echo strtotime("january 1, 1901"); 
+	/*echo strtotime("january 1, 1901");
 	var_dump(strtotime("january 1, 1901")); /**/
 	
 	/*echo date("M-d-Y", mktime(0, 0, 0, 12, 32, 1995));/**/
@@ -151,15 +165,16 @@
 	$a = 10;
 	b($a);
 	echo $a;/**/
-	
+
     /*$a;
-    for($a=1;$a<=100;$a++){
+    for($a=1;$a<=10;$a++){
 		if($a==50){
 			continue;
 		}
 		print($a);
 		echo '<br />';
-    }/**/
+    }
+    /**/
 	
 	/*$a = 20;
 	function myfunction($b) {
@@ -1055,7 +1070,7 @@
 		</body>
 	/**/
 
-//echo 'Hi this is super GLOBAL VARIABLES';//
+	//echo 'Hi this is super GLOBAL VARIABLES';//
 	/*$x = 5;
 	$y = 15;
 	function add(){
@@ -1063,7 +1078,6 @@
 	}
 	add();
 	echo $z;
-
 
 	echo '<br />';
 	echo 'PHP_SELF:: '.$_SERVER['PHP_SELF'];
@@ -1153,16 +1167,17 @@
 		echo "The file $filename does not exist";
 	}/**/
 	
-	/*
-	$dummytext = 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
+
+	/*$dummytext = 'What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
 	
-	$handle = fopen('names.txt','w');
-	fwrite($handle, $dummytext);
+	//	$handle = fopen('names.txt','w');
+	//	fwrite($handle, $dummytext);
+	//	fclose($handle);
 	
-	fclose($handle);
-	
-	$handle = fopen('names.txt','a');
-	fwrite($handle, 'Testing append');/**/
+	$handle = fopen('names2.txt','a');
+	fwrite($handle, "$dummytext ");
+
+	/**/
 	
 	/*
 	echo $df_c = disk_free_space("C:");
@@ -1195,9 +1210,10 @@
 		$handle = fopen($file_name,'a');
 		fwrite($handle, $fname."\n");/**/
 		
-		/* echo 'Get file stat';
+		/*echo 'Get file stat: ';
 		//echo $stat = stat('C:\php\php.exe');echo '<br />';
 		$stat2 = stat('names.txt');
+		echo '<pre>';
 		var_dump($stat2);
 		/**/
 		
@@ -1222,8 +1238,8 @@
 		echo 'Linking: '.$linking;
 		echo '<br />';/**/
 		
-		/*
-		echo '<br />';
+
+		/*echo '<br />';
 		$filename = 'names.txt';
 		if (is_readable($filename)) {
 			echo 'The file is readable';
@@ -1242,8 +1258,8 @@
 			echo 'copyed unsuccessfully!';
 		}/**/
 		
-		/*
-		$homepage = file_get_contents('http://www.tutorialrepublic.com/');
+
+		/*$homepage = file_get_contents('http://www.tutorialrepublic.com/');
 		echo $homepage;
 		$current = file_get_contents($file_name);
 		$written = file_put_contents($file_name, $current);
@@ -1280,8 +1296,7 @@
 			}
 			$count++;
 		}/**/
-		
-		
+
 		//$handle = fopen($file_name, 'r');
 		
 		/*
