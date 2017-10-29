@@ -6,8 +6,15 @@
  * Time: 1:06 AM
  */
 
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+set_error_handler('some_handler',E_ALL);
+
+//ini_set('display_errors', 1);
+//error_reporting(E_ALL);
+
+
+$foo = "Bar";
+
+echo $foo;
 
 define('123MESSAGE', '123');
 echo strlen('123MESSAGE');

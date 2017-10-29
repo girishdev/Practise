@@ -6,22 +6,29 @@ Main Link:-
     http://www.phpforkids.com/php/php-tutorial-table-of-contents.php
 
 Php:-
-    0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68)...
+    0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68) // Finished
         - We need to know all about Bitwise
         - bitwise left shift (<<) and bitwise right shift (>>) operands
         - ord('a') = 97;
-    1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...ssss
+        - chr(97)  = a; (44 Q)
+    1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
     2-PHP String         -                               = (Strings 1, Strings and Patterns)
     3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
     4-PHP DateTime       -                               = (Data Format & Types)
     5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
-    6-Web Programming                                    = (Web Features, Web Features 1, INPUT/OUTPUT)
+    6-Web Programming                                    = (Web Features, Web Features 1)
+        6.1-Web Programming                              = (Web Features 1)
+        6.2-Input & Output                               = (INPUT/OUTPUT)
     7-PHP Curl
     8-PHP Preg Functions
     9-PHP XML
     10-PHP JSON
     11-PHP Database                                      = (Databases and SQL, Security)
+    12-Security
+    13-PHP Pattern printing programs
+        ***https://www.sitesbay.com/php-program/php-print-star-pattern-in-php
+        ***https://www.javatpoint.com/php-star-triangle
 
 - PHP break and continue
 

@@ -1,0 +1,14 @@
+
+
+November:-
+    1st week - (PHP)
+        1 to 4 = 4 days
+
+    2st week - (Mysql)
+        5 to 9 = 5 days
+
+    3st week - (WordPress)
+        10 to 15 = 6 days
+
+    4st week - (Laravel)
+        16 to 22 = 7 days

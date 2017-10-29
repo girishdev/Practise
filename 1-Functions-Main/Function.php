@@ -1,5 +1,12 @@
 <?php
 
+	include ("Oct-2017");
+
+	echo $foo;
+
+
+	exit();
+
 	echo '<h1>This is Function file: </h2>';
 
 	// function sayHello
