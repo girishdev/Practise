@@ -22,9 +22,9 @@ Php:-
     5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
       - The Basics
         Properties
-        Class Constants
+      - Class Constants
         Autoloading Classes
-        Constructors and Destructors
+      - Constructors and Destructors
         Visibility
         Object Inheritance
         Scope Resolution Operator (::)
