@@ -135,4 +135,73 @@ $SimpleClass2->newclass();
 echo '<br />';echo '<br />';
 echo '<br />=============================================================================================<br />';
 
+class foo2{
+
+	public $var1 = 'variable1';
+	protected $var2 = 'variable2';
+	private $var3 = 'variable3';
+
+	function getAccessmodifier(){
+
+		echo $this->var1;
+		echo $this->var2;
+		echo $this->var3;
+	}
+
+	function getAccessmodifier2(){
+		echo $this->var1;
+		echo $this->var2;
+		echo $this->var3;
+	}
+
+//	echo $this->var1;
+//	echo $this->var2;
+//	echo $this->var3;
+
+}
+
+class fooChild extends foo2{
+	function getAccessmodifier3() {
+		echo $this->var1;
+		echo $this->var2;
+//		echo $this->var3;
+	}
+}
+
+$obj5 =new foo2();
+$obj5->getAccessmodifier();echo '<br />';
+$obj5->getAccessmodifier2();
+echo '<br />';echo '<br />';
+
+$obj6 = new fooChild();
+$obj6->getAccessmodifier3();echo '<br />';
+echo $obj6->var1;
+
+echo '<br />';echo '<br />';
+echo '<br />=============================================================================================<br />';
+
+class BaseClass {
+	public function test() {
+		echo "BaseClass::test() called<br />";
+	}
+
+	final public function moreTesting() {
+		echo "BaseClass::moreTesting() called<br />";
+	}
+}
+
+class ChildClass extends BaseClass {
+	//this will cause Compile error
+	public function moreTesting() {
+		echo "ChildClass::moreTesting() called<br />";
+	}
+}
+
+$final = new ChildClass;
+$final->test();
+$final->moreTesting();
+
+echo '<br />';echo '<br />';
+echo '<br />=============================================================================================<br />';
+
 ?>

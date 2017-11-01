@@ -20,12 +20,12 @@ Php:-
     4-PHP DateTime       -                               = (Data Format & Types)
 
     5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
-      - The Basics
-        Properties
-      - Class Constants
-        Autoloading Classes
-      - Constructors and Destructors
-        Visibility
+      + The Basics
+      + Properties
+      + Class Constants
+      + Autoloading Classes
+      + Constructors and Destructors
+      + Visibility
         Object Inheritance
         Scope Resolution Operator (::)
         Static Keyword
@@ -35,7 +35,7 @@ Php:-
         Overloading
         Object Iteration
         Magic Methods
-        Final Keyword
+      + Final Keyword
         Object Cloning
         Comparing Objects
         Type Hinting
