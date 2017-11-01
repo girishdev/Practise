@@ -14,9 +14,36 @@ Php:-
     1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
     2-PHP String         -                               = (Strings 1, Strings and Patterns)
+
     3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
+
     4-PHP DateTime       -                               = (Data Format & Types)
+
     5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
+      - The Basics
+        Properties
+        Class Constants
+        Autoloading Classes
+        Constructors and Destructors
+        Visibility
+        Object Inheritance
+        Scope Resolution Operator (::)
+        Static Keyword
+        Class Abstraction
+        Object Interfaces
+        Traits
+        Overloading
+        Object Iteration
+        Magic Methods
+        Final Keyword
+        Object Cloning
+        Comparing Objects
+        Type Hinting
+        Late Static Bindings
+        Objects and references
+        Object Serialization
+        OOP Changelog
+
     6-Web Programming                                    = (Web Features, Web Features 1)
         6.1-Web Programming                              = (Web Features 1)
         6.2-Input & Output                               = (INPUT/OUTPUT)
