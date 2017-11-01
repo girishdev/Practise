@@ -1,5 +1,20 @@
 <?php
 
+echo '<br />This is Abstract class: <br />';
+abstract class abc{
+	abstract protected function f1($a,$b);
+}
+
+class xyz extends abc{
+	protected function f1($name, $address){
+		echo "$name, $address";
+	}
+}
+
+$a = new xyz();
+
+echo '<br />';echo '<br />';
+echo '<br />=============================================================================================<br />';
 
 class a {
 	function test(){
@@ -185,7 +200,7 @@ class BaseClass {
 		echo "BaseClass::test() called<br />";
 	}
 
-	final public function moreTesting() {
+	final public function moreTesting_Removethis() {
 		echo "BaseClass::moreTesting() called<br />";
 	}
 }
@@ -200,6 +215,49 @@ class ChildClass extends BaseClass {
 $final = new ChildClass;
 $final->test();
 $final->moreTesting();
+
+echo '<br />';echo '<br />';
+echo '<br />=============================================================================================<br />';
+
+
+abstract class AbstractClass {
+	abstract protected function getValue();
+	abstract protected function prefixValue($prefix);
+
+	public function printOut($a, $b){
+		print $this->getValue();
+		echo 'This is just for testing purpose only';echo '<br />';
+		echo $a+$b;echo '<br />';
+	}
+}
+
+class ConcreteClass1 extends AbstractClass {
+	protected function getValue(){
+		return "ConcreteClass1: ";
+	}
+	public function prefixValue($prefix) {
+		return "{$prefix}ConcreteClass1";
+	}
+}
+
+class ConcreteClass2 extends AbstractClass {
+	protected function getValue(){
+		return "ConcreteClass2: ";
+	}
+	public function prefixValue($prefix) {
+		return "{$prefix}ConcreteClass2";
+	}
+}
+
+$class1 = new ConcreteClass1;
+$class1->printOut(10,2);
+echo $class1->prefixValue("Foo In One: ");
+echo '<br />';echo '<br />';
+
+$class2 = new ConcreteClass2;
+$class2->printOut(3,3);
+echo $class2->prefixValue("Foo In Tow: ");
+
 
 echo '<br />';echo '<br />';
 echo '<br />=============================================================================================<br />';

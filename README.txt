@@ -26,11 +26,11 @@ Php:-
       + Autoloading Classes
       + Constructors and Destructors
       + Visibility
-        Object Inheritance
+      + Object Inheritance
         Scope Resolution Operator (::)
         Static Keyword
-        Class Abstraction
-        Object Interfaces
+      + Class Abstraction
+      + Object Interfaces
         Traits
         Overloading
         Object Iteration
