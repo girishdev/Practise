@@ -27,8 +27,8 @@ Php:-
       + Constructors and Destructors
       + Visibility
       + Object Inheritance
-        Scope Resolution Operator (::)
-        Static Keyword
+      + Scope Resolution Operator (::)
+      + Static Keyword
       + Class Abstraction
       + Object Interfaces
         Traits
