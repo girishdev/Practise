@@ -11,6 +11,8 @@ Php:-
         - bitwise left shift (<<) and bitwise right shift (>>) operands
         - ord('a') = 97;
         - chr(97)  = a; (44 Q)
+        - PHP Basic (Q 3, they are not following BODMAS rule => BMD)
+        - AND, OR, XOR
 
     1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
