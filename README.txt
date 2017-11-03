@@ -13,6 +13,8 @@ Php:-
         - chr(97)  = a; (44 Q)
         - PHP Basic (Q 3, they are not following BODMAS rule => BMD)
         - AND, OR, XOR
+        - print and echo
+        - 30 Q finished in PHP Basics...
 
     1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
