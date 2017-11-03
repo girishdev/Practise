@@ -11,6 +11,7 @@ Php:-
         - bitwise left shift (<<) and bitwise right shift (>>) operands
         - ord('a') = 97;
         - chr(97)  = a; (44 Q)
+
     1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
     2-PHP String         -                               = (Strings 1, Strings and Patterns)
@@ -31,8 +32,10 @@ Php:-
       + Static Keyword
       + Class Abstraction
       + Object Interfaces
-        Traits
+
+      + Traits
         Overloading
+        
         Object Iteration
         Magic Methods
       + Final Keyword
@@ -47,12 +50,19 @@ Php:-
     6-Web Programming                                    = (Web Features, Web Features 1)
         6.1-Web Programming                              = (Web Features 1)
         6.2-Input & Output                               = (INPUT/OUTPUT)
+
     7-PHP Curl
+
     8-PHP Preg Functions
+
     9-PHP XML
+
     10-PHP JSON
+
     11-PHP Database                                      = (Databases and SQL, Security)
+
     12-Security
+
     13-PHP Pattern printing programs
         ***https://www.sitesbay.com/php-program/php-print-star-pattern-in-php
         ***https://www.javatpoint.com/php-star-triangle
@@ -76,5 +86,16 @@ Rest API's:-
 Git Repositories:-
     http://www.studytonight.com/github/repositories-in-git
 
+
+12000
+25000
+20000
+20000
+
+77000
+
+65000
+
+14,2000
 
 

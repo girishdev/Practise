@@ -6,11 +6,23 @@
  * Time: 1:06 AM
  */
 
-set_error_handler('some_handler',E_ALL);
+//set_error_handler('some_handler',E_ALL);
 
 //ini_set('display_errors', 1);
 //error_reporting(E_ALL);
 
+
+function divide($num1,$num2){
+	if($num2 == 0){
+		throw new Exception('Cannot divide by Zero: ');
+	} else {
+		return $num1/$num2;
+	}
+}
+
+//echo divide(10,2);
+
+echo '<br />';echo '<br />';echo '<br />';echo '<br />';
 
 $foo = "Bar";
 

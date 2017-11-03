@@ -1,5 +1,27 @@
 <?php
 
+trait t1 {
+	function cnf1(){
+		echo 'This is t1 cnf1: ';
+	}
+}
+
+trait t2 {
+	function cnf2(){
+		echo 'This is t2 cnf2: ';
+	}
+}
+
+class test{
+	use t1, t2;
+}
+
+$objt = new test();
+echo $objt->cnf1();
+
+echo '<br />';echo '<br />';echo '<br />';
+exit();
+
 echo '<br />This is Abstract class: <br />';
 abstract class abc{
 	abstract protected function f1($a,$b);

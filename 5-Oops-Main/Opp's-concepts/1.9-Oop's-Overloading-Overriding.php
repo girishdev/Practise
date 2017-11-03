@@ -1,11 +1,11 @@
 <?php
 
 //Method Overriding and Final:-
-	//Method Overriding: if a mothod of superclass is implemented in
-	//subclass then it is called method overiding
+	//Method Overriding: if a method of superclass is implemented in
+	//subclass then it is called method overriding
 
 	//To stop method overriding we have to use final keyword
-	//In the same way to stop inhertence we have to use final keyword
+	//In the same way to stop inheritance we have to use final keyword
 	//In  front of class
 	
 // echo "***http://www.techflirt.com/tutorials/oop-in-php/overloading-and-overriding.html";
