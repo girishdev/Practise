@@ -17,6 +17,7 @@ If the class itself is being defined final then it cannot be extended. If the fu
 	}
 
 	class ChildClass extends BaseClass {
+		//this will cause Compile error
 		public function moreTesting() {
 			echo "ChildClass::moreTesting() called<br />";
 		}

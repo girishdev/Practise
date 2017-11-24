@@ -6,25 +6,50 @@ Main Link:-
     http://www.phpforkids.com/php/php-tutorial-table-of-contents.php
 
 Php:-
-OK  0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68) // Finished
+    0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68) // Finished
         - We need to know all about Bitwise
         - bitwise left shift (<<) and bitwise right shift (>>) operands
         - ord('a') = 97;
         - chr(97)  = a; (44 Q)
+        - PHP Basic (Q 3, they are not following BODMAS rule => BMD)
+        - AND, OR, XOR
+        - print and echo
+        - 30 Q finished in PHP Basics...
 
-OK  1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)......
-        - Decimal to Hexadecimal and vice versa
+    1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
-OK  2-PHP String         -                               = (Strings 1, Strings and Patterns)
+    2-PHP String         -                               = (Strings 1, Strings and Patterns)
 
-OK  3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
+    3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
 
     4-PHP DateTime       -                               = (Data Format & Types)
 
-OK  5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
-        
-        Overloading and Overriding
+    5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
+      + The Basics
+      + Properties
+      + Class Constants
+      + Autoloading Classes
+      + Constructors and Destructors
+      + Visibility
+      + Object Inheritance
+      + Scope Resolution Operator (::)
+      + Static Keyword
+      + Class Abstraction
+      + Object Interfaces
 
+      + Traits
+        Overloading
+        
+        Object Iteration
+        Magic Methods
+      + Final Keyword
+        Object Cloning
+        Comparing Objects
+        Type Hinting
+        Late Static Bindings
+        Objects and references
+        Object Serialization
+        OOP Changelog
 
     6-Web Programming                                    = (Web Features, Web Features 1)
         6.1-Web Programming                              = (Web Features 1)
@@ -46,9 +71,6 @@ OK  5-PHP OOP's                                          = (Object Oriented Prog
         ***https://www.sitesbay.com/php-program/php-print-star-pattern-in-php
         ***https://www.javatpoint.com/php-star-triangle
 
-    14-PHP Error Handling
-        ***https://www.hscripts.com/tutorials/php/error-handling/errorMailing.php
-
 - PHP break and continue
 
 - Know about the status codes(link 400, 500)
@@ -69,9 +91,15 @@ Git Repositories:-
     http://www.studytonight.com/github/repositories-in-git
 
 
-Laravel:-
-        
+12000
+25000
+20000
+20000
 
+77000
 
+65000
+
+14,2000
 
 
