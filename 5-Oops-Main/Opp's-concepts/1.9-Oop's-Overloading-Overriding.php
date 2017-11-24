@@ -1,23 +1,40 @@
 <?php
 
 //Method Overriding and Final:-
-	//Method Overriding: if a mothod of superclass is implemented in
-	//subclass then it is called method overiding
+	//Method Overriding: if a method of superclass is implemented in
+	//subclass then it is called method overriding
 
 	//To stop method overriding we have to use final keyword
-	//In the same way to stop inhertence we have to use final keyword
+	//In the same way to stop inheritance we have to use final keyword
 	//In  front of class
 	
 // echo "***http://www.techflirt.com/tutorials/oop-in-php/overloading-and-overriding.html";
 
 // echo "Overriding :-	Basic meaning of overriding in oop is to change behavior of your parent class method.";
+// echo Overriding is only pertinent to derived classes, where the parent class has defined a method and the derived class wishes to override that method.
 
 // echo "Overloading :- In real word overloading means assigning extra work to same machine or person.";
+// echo Overloading is defining functions that have similar signatures, yet have different parameters.
 
+/*class Foo {
+    function myFoo() {
+        return "Foo";
+    }
+}
 
+class Bar extends Foo {
+    function myFoo() {
+        return "Bar";
+    }
+}
 
-/*echo "Overriding parent class methods";
-	class Member {
+$foo = new Foo;
+$bar = new Bar;
+echo($foo->myFoo()); //"Foo"
+echo($bar->myFoo()); //"Bar"*/
+
+// echo "Overriding parent class methods";
+	/*class Member {
 		public $username = "";
 		private $loggedIn = false;
 
@@ -38,7 +55,7 @@
 
 		public function logout() {
 			$this->loggedIn = false;
-			echo "$this->username loged out successfully";
+			echo "$this->username logged out successfully";
 		}
 	}
 
@@ -93,7 +110,7 @@
 
 // echo "Overriding in PHP";
 	
-	class testParent {
+/*	class testParent {
 		public function f1() {
 			echo 1;
 		}
@@ -108,7 +125,7 @@
 		}
 	}
 	$a = new testChild();
-	$a->f2("ankur");//it will print ankur
+	$a->f2("ankur");//it will print ankur*/
 	
 	
 

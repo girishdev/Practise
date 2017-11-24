@@ -1,7 +1,11 @@
 <?php
 
 	echo 'Magic method: '.'<br /><br />';
-	
+
+
+	exit();
+
+
 echo '<br />__construct STARTS'.'<br />';
 	/*class classconst {
 		function __construct() {
@@ -305,7 +309,7 @@ echo '<br /><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<__wakeup STARTS>>>>>>>>>>>>>>>>>
 	echo $slee;
 echo '<br /><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<__wakeup ENDS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br />';
 
-class testcon {
+/*class testcon {
 	function __construct(){
 		echo '<br >This is __construct 1: <br />';
 	}
@@ -314,7 +318,7 @@ class testcon {
 	}
 }
 $objT = new testcon;
-unset($objT);
+unset($objT);*/
 
 echo '__CALL STARTS'.'<br />';
 

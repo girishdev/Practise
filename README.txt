@@ -6,29 +6,48 @@ Main Link:-
     http://www.phpforkids.com/php/php-tutorial-table-of-contents.php
 
 Php:-
-    0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68) // Finished
+OK  0-PHP Basic          - OK -- Theory + objective type = (Basics 1-55, PHP Basics-68) // Finished
         - We need to know all about Bitwise
         - bitwise left shift (<<) and bitwise right shift (>>) operands
         - ord('a') = 97;
         - chr(97)  = a; (44 Q)
-    1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)...
 
-    2-PHP String         -                               = (Strings 1, Strings and Patterns)
-    3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
+OK  1-PHP Function       - OK -- Theory + objective type = (Functions and Arrays-43)......
+        - Decimal to Hexadecimal and vice versa
+
+OK  2-PHP String         -                               = (Strings 1, Strings and Patterns)
+
+OK  3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
+
     4-PHP DateTime       -                               = (Data Format & Types)
-    5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
+
+OK  5-PHP OOP's                                          = (Object Oriented Programming, 70 Questions)
+        
+        Overloading and Overriding
+
+
     6-Web Programming                                    = (Web Features, Web Features 1)
         6.1-Web Programming                              = (Web Features 1)
         6.2-Input & Output                               = (INPUT/OUTPUT)
+
     7-PHP Curl
+
     8-PHP Preg Functions
+
     9-PHP XML
+
     10-PHP JSON
+
     11-PHP Database                                      = (Databases and SQL, Security)
+
     12-Security
+
     13-PHP Pattern printing programs
         ***https://www.sitesbay.com/php-program/php-print-star-pattern-in-php
         ***https://www.javatpoint.com/php-star-triangle
+
+    14-PHP Error Handling
+        ***https://www.hscripts.com/tutorials/php/error-handling/errorMailing.php
 
 - PHP break and continue
 
@@ -48,6 +67,11 @@ Rest API's:-
 
 Git Repositories:-
     http://www.studytonight.com/github/repositories-in-git
+
+
+Laravel:-
+        
+
 
 
 
