@@ -20,7 +20,7 @@ Php:-
 
     2-PHP String         -                               = (Strings 1, Strings and Patterns)
 
-    3-PHP Array          -    -- Theory + objective type = (Arrays 1)....
+    3-PHP Array          -    -- Theory + objective type = (Arrays 1 & Functions and Arrays)....
 
     4-PHP DateTime       -                               = (Data Format & Types)
 
@@ -91,15 +91,9 @@ Git Repositories:-
     http://www.studytonight.com/github/repositories-in-git
 
 
-12000
-25000
-20000
-20000
+Laravel:-
 
-77000
-
-65000
-
-14,2000
+  laravel important topics
+  laravel important packages
 
 
